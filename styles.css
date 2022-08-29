@@ -1,0 +1,14 @@
+body{
+    text-align: center;
+}
+
+label{
+    display: block;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+#check-btn{
+    padding: 1rem;
+    margin: 2rem;
+}
