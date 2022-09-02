@@ -25,6 +25,7 @@ function submitHandler() {
 
 function calculateProfitAndLoss(initial, qty, current) {
     if (initial === 0 || qty === 0 || current === 0) {
+        outputDiv.style.color = "red";
         showOutput("Please enter all the fields");
     } else if (initial > current) {
         var loss = ((initial - current) * qty);
