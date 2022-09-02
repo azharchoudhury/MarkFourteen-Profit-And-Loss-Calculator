@@ -27,18 +27,21 @@ function calculateProfitAndLoss(initial, qty, current) {
     if (initial === 0 || qty === 0 || current === 0) {
         showOutput("Please enter all the fields");
     } else if (initial > current) {
-        var loss = ((initial - current) * qty).toFixed(2);
-        var lossPercentage = ((loss / initial) * 100).toFixed(2);
-        showOutput(`Your loss is ${loss} and the loss percentage is ${lossPercentage}%`);
-        document.body.style.backgroundColor= "pink";
+        var loss = ((initial - current) * qty);
+        var lossPercentage = (( (initial - loss)/ initial) * 100);
+        showOutput(`You have incurred a loss of ₹${loss} and the loss percentage is ${lossPercentage.toFixed(2)}%`);
+        outputDiv.style.backgroundColor= "#b91c1c";
+        outputDiv.style.color= "white";
     } else if (current > initial) {
-        var profit = ((current - initial) * qty).toFixed(2);
-        var profitPercentage = ((profit / initial) * 100).toFixed(2);
-        showOutput(`Your profit is ${profit} and the profit percentage is ${profitPercentage}%`);
-        document.body.style.backgroundColor= "green";
+        var profit = ((current - initial) * qty);
+        var profitPercentage = (( (current - initial) / initial) * 100);
+        showOutput(`Your have earned a profit of ₹${profit} and the profit percentage is ${profitPercentage.toFixed(2)}%`);
+        outputDiv.style.backgroundColor= "#65a30d";
+        outputDiv.style.color= "white";
     } else {
         showOutput("No Pain No Gain and, No Gain, So No Pain");
-        document.body.style.backgroundColor = "yellow";
+        outputDiv.style.backgroundColor = "#fcd34d";
+        outputDiv.style.color = "black";
     }
 }
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,30 +8,37 @@
     <title>Stocks</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-    <h1>Mark 14 - Stocks</h1>
 
     <main>
 
-        <label for="initial-price">Initial Price
-            <input type="number" id="initial-price">
-        </label>
+        <div id="container">
 
-        <label for="quantity">Quantity of Stocks
-            <input type="number" id="quantity">
-        </label>
+            <p id="heading-text">Stocks - Profit or Loss??</p>
 
-        <label for="current-price">Current Price
-            <input type="number" id="current-price">
-        </label>
+            <label class="input-label" for="initial-price">Initial Price
+                <input type="number" id="initial-price" placeholder="Enter initial price here">
+            </label>
 
-        <button id="check-btn">Check Status!!</button>
+            <label class="input-label" for="quantity">Quantity of Stocks
+                <input type="number" id="quantity" placeholder="Enter the number of stocks purchased">
+            </label>
 
-        <div id="output-div"></div>
+            <label class="input-label" for="current-price">Current Price
+                <input type="number" id="current-price" placeholder="Enter the current price of the stocks">
+            </label>
+
+            <button id="check-btn">Check Status!!</button>
+
+            <div id="output-div"></div>
+
+        </div>
 
     </main>
 
     <script src="index.js"></script>
 </body>
+
 </html>

@@ -1,14 +1,73 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+body {
     text-align: center;
+    background: url(./images/img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-label{
-    display: block;
+label {
     padding: 0.5rem;
     margin: 1rem;
 }
 
-#check-btn{
-    padding: 1rem;
-    margin: 2rem;
+#container {
+    display: block;
+    background: linear-gradient(150deg,  #0c4a6e, #d1d5db);
+    border-radius: 4rem;
+    width: 80%;
+    margin: 4rem auto;
+}
+
+#heading-text{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #f1f5f9;
+    padding: 1rem 0;
+
+}
+
+
+.input-label {
+    display: block;
+    font-size: larger;
+    margin: 1rem 0;
+    font-weight: 600;
+}
+
+input{
+    display: block;
+    margin: 0.5rem auto;
+    padding: 0.5rem 0.2rem;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    border-width: 1px;
+    border-radius: 0.5rem;
+}
+
+#check-btn {
+    padding: 0.5rem;
+    border-radius: 1rem;
+    font-size: 15px;
+    border-color: gray;
+    margin-bottom: 1rem;
+}
+
+#output-div{
+    font-family: 'Montserrat', sans-serif;
+    padding: 1rem 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #44403c;
+    width: 65%;
+    display: block;
+    margin: auto;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
 }
